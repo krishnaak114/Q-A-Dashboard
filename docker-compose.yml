@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  # Backend API + WebSocket Server
+  backend:
+    build: ./backend
+    container_name: hemut-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:///./qa_dashboard.db
+      - SECRET_KEY=your-super-secret-key-change-this-in-production
+      - ALLOWED_ORIGINS=http://localhost:3000,http://localhost:3001
+      - WEBHOOK_URL=https://webhook.site/your-unique-url
+    volumes:
+      - ./backend:/app
+      - backend-db:/app/data
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    networks:
+      - hemut-network
+
+  # Frontend Next.js Application
+  frontend:
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: hemut-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+      - NEXT_PUBLIC_WS_URL=ws://localhost:8000/ws
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
+    command: npm run dev
+    depends_on:
+      - backend
+    networks:
+      - hemut-network
+
+volumes:
+  backend-db:
+
+networks:
+  hemut-network:
+    driver: bridge

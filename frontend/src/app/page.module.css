@@ -1,0 +1,125 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.welcome {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.adminBadge {
+  background: #3b82f6;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.guestLabel {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.loginButton,
+.registerButton,
+.logoutButton {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.loginButton {
+  background: transparent;
+  color: #3b82f6;
+  border: 1px solid #3b82f6;
+}
+
+.loginButton:hover {
+  background: #eff6ff;
+}
+
+.registerButton {
+  background: #3b82f6;
+  color: white;
+}
+
+.registerButton:hover {
+  background: #2563eb;
+}
+
+.logoutButton {
+  background: #ef4444;
+  color: white;
+}
+
+.logoutButton:hover {
+  background: #dc2626;
+}
+
+.main {
+  flex: 1;
+  padding: 32px 24px;
+  background: #f3f4f6;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer {
+  background: white;
+  border-top: 1px solid #e5e7eb;
+  padding: 24px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 4px 0;
+}
+
+.features {
+  font-size: 12px;
+  color: #9ca3af;
+}
