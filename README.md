@@ -617,7 +617,7 @@ pip install psycopg2-binary
 
 ## 📧 **Contact & Support**
 
-**GitHub Repository**: https://github.com/yourusername/hemut-qa-dashboard
+**GitHub Repository**: https://github.com/krishnaak114/Q-A-Dashboard
 
 For questions or issues, please open a GitHub issue or contact the development team.
 
