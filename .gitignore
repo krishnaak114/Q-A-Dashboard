@@ -1,45 +1,213 @@
-# Python
+# ===========================
+# Python & Backend
+# ===========================
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
+*.dylib
 .Python
+
+# Virtual Environments
 env/
 venv/
 ENV/
 .venv
+.env
+.virtualenv
+pipenv/
+.pyenv/
+
+# Distribution / Packaging
+*.egg
 *.egg-info/
 dist/
 build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.whl
 
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / Coverage
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# ===========================
 # Database
+# ===========================
 *.db
 *.sqlite
 *.sqlite3
+*.db-shm
+*.db-wal
 
-# Environment
+# Database backups
+*.sql
+*.dump
+backups/
+
+# ===========================
+# Environment Variables
+# ===========================
 .env
+.env.*
 .env.local
+.env.development
 .env.production
+.env.test
+!.env.example
+*.envrc
 
-# IDEs
+# ===========================
+# IDEs & Editors
+# ===========================
+# VSCode
 .vscode/
+*.code-workspace
+
+# PyCharm / IntelliJ
 .idea/
+*.iml
+*.iws
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
 *.swp
 *.swo
+*~
+.vim/
 
-# Node
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ===========================
+# Node.js & Frontend
+# ===========================
 node_modules/
-.next/
-out/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log*
+lerna-debug.log*
 
-# OS
+# Next.js
+.next/
+out/
+build/
+.vercel
+.turbo
+
+# Production build
+dist/
+*.tsbuildinfo
+next-env.d.ts
+
+# Package manager lock files (keep package-lock.json, remove if using yarn)
+# yarn.lock
+# pnpm-lock.yaml
+
+# ===========================
+# Operating Systems
+# ===========================
+# macOS
 .DS_Store
-Thumbs.db
+.AppleDouble
+.LSOverride
+._*
 
-# Logs
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ===========================
+# Logs & Temporary Files
+# ===========================
 *.log
 logs/
+*.tmp
+*.temp
+*.cache
+
+# ===========================
+# Docker
+# ===========================
+.dockerignore
+docker-compose.override.yml
+
+# ===========================
+# CI/CD & Testing
+# ===========================
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+
+# Coverage reports
+htmlcov/
+.nyc_output/
+
+# ===========================
+# Security & Secrets
+# ===========================
+*.pem
+*.key
+*.crt
+*.cer
+secrets/
+credentials/
+
+# ===========================
+# Project Specific
+# ===========================
+# Backend data directory
+backend/data/
+backend/app.db
+
+# Frontend uploads/downloads
+frontend/public/uploads/
+downloads/
+
+# Test data
+test_data/
+*.test.db
+
+# ===========================
+# Miscellaneous
+# ===========================
+.editorconfig
+TODO.md
+NOTES.md
+scratch/

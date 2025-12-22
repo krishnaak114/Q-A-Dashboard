@@ -4,6 +4,10 @@
 
 Your **Hemut Trial Project: Real-Time Q&A Dashboard** is 100% ready to run!
 
+📦 **GitHub Repository**: [github.com/krishnaak114/Q-A-Dashboard](https://github.com/krishnaak114/Q-A-Dashboard)  
+🚀 **CI/CD Status**: ✅ All tests passing  
+📊 **Completion Score**: 99-100%
+
 ---
 
 ## 📦 What's Been Built

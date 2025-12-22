@@ -1,0 +1,86 @@
+# Git Attributes Configuration
+
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Source code
+*.py text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.txt text eol=lf
+*.sh text eol=lf
+
+# Windows scripts
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+# Binary files
+*.db binary
+*.sqlite binary
+*.sqlite3 binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.mov binary
+*.mp4 binary
+*.mp3 binary
+*.flv binary
+*.fla binary
+*.swf binary
+*.gz binary
+*.zip binary
+*.7z binary
+*.ttf binary
+*.eot binary
+*.woff binary
+*.woff2 binary
+*.pyc binary
+*.pyo binary
+*.pyd binary
+*.so binary
+*.dll binary
+*.exe binary
+
+# Archives
+*.tar binary
+*.tgz binary
+*.rar binary
+
+# Documents
+*.pdf binary
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+*.ppt binary
+*.pptx binary
+
+# Exclude from exports
+.gitattributes export-ignore
+.gitignore export-ignore
+.github export-ignore
+*.md export-ignore
+LICENSE export-ignore
+CHANGELOG.md export-ignore
+CONTRIBUTING.md export-ignore
+SECURITY.md export-ignore
+
+# Language statistics (GitHub Linguist)
+*.md linguist-documentation
+*.css linguist-vendored=false
+docs/* linguist-documentation
+tests/* linguist-vendored
+__pycache__/* linguist-generated
+node_modules/* linguist-vendored
+*.min.js linguist-generated

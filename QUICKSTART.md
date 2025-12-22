@@ -2,11 +2,26 @@
 
 ## 🎯 Get Up and Running in 5 Minutes
 
+### Step 0: Clone Repository
+
+```powershell
+# Clone from GitHub
+git clone https://github.com/krishnaak114/Q-A-Dashboard.git hemut-qa-dashboard
+cd hemut-qa-dashboard
+```
+
+**SSH Clone**:
+```powershell
+git clone git@github.com:krishnaak114/Q-A-Dashboard.git hemut-qa-dashboard
+cd hemut-qa-dashboard
+```
+
+---
+
 ### Option 1: Docker Compose (Easiest - Recommended)
 
 ```powershell
-# Navigate to project directory
-cd hemut-qa-dashboard
+# Already in project directory from clone
 
 # Start everything with one command
 docker-compose up --build

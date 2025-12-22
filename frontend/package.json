@@ -1,7 +1,14 @@
 {
   "name": "hemut-qa-dashboard-frontend",
   "version": "1.0.0",
+  "description": "Real-Time Q&A Dashboard Frontend - Built with Next.js, React, and WebSockets for Hemut Trial Project",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:krishnaak114/Q-A-Dashboard.git"
+  },
+  "author": "krishnaak114",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

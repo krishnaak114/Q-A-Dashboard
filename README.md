@@ -1,6 +1,13 @@
 # 🎯 Hemut Trial Project: Real-Time Q&A Dashboard
 
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Q--A--Dashboard-blue?logo=github)](https://github.com/krishnaak114/Q-A-Dashboard)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.127.0-009688?logo=fastapi)](https://fastapi.tiangolo.com/)
+[![Next.js](https://img.shields.io/badge/Next.js-14.2.6-000000?logo=next.js)](https://nextjs.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 A full-stack real-time Q&A platform built with **FastAPI**, **Next.js**, and **WebSockets**. Users can submit questions, provide answers, and admins can manage question statuses with live updates across all connected clients.
+
+🔗 **Repository**: [github.com/krishnaak114/Q-A-Dashboard](https://github.com/krishnaak114/Q-A-Dashboard)
 
 ## 📋 **Project Overview**
 
@@ -642,7 +649,10 @@ The system includes an AI Assistant that automatically suggests answers to new q
 
 ## 📧 **Contact & Support**
 
-**GitHub Repository**: https://github.com/krishnaak114/Q-A-Dashboard
+**GitHub Repository**: [https://github.com/krishnaak114/Q-A-Dashboard](https://github.com/krishnaak114/Q-A-Dashboard)
+
+**Clone URL (HTTPS)**: `https://github.com/krishnaak114/Q-A-Dashboard.git`  
+**Clone URL (SSH)**: `git@github.com:krishnaak114/Q-A-Dashboard.git`
 
 For questions or issues, please open a GitHub issue or contact the development team.
 
@@ -650,7 +660,9 @@ For questions or issues, please open a GitHub issue or contact the development t
 
 ## 📄 **License**
 
-This is a trial project built for the Hemut assignment. Feel free to use as reference or extend for your own projects.
+This project was built as a trial assignment for Hemut. Feel free to use as reference or extend for your own projects.
+
+MIT License - See repository for details.
 
 ---
 
