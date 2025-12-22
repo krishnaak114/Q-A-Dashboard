@@ -7,6 +7,7 @@ from sqlalchemy import desc
 from typing import List, Optional
 import httpx
 import os
+import logging
 
 from ..database import get_db
 from ..models import Question, Answer, User, QuestionStatus
@@ -19,8 +20,10 @@ from ..schemas import (
 )
 from ..auth import get_current_user, require_admin
 from ..websocket import manager
+from ..ai_assistant import get_ai_suggestion
 
 router = APIRouter(prefix="/questions", tags=["Questions"])
+logger = logging.getLogger(__name__)
 
 
 @router.post("", response_model=QuestionResponse, status_code=status.HTTP_201_CREATED)
@@ -69,6 +72,34 @@ async def create_question(
             "question_id": new_question.question_id
         }
     })
+    
+    # AI Auto-Suggest Answer (Bonus Feature)
+    ai_suggestion = get_ai_suggestion(question_data.message)
+    if ai_suggestion and ai_suggestion.get("confidence", 0) > 0.75:
+        # Auto-create AI-suggested answer for high-confidence suggestions
+        ai_answer = Answer(
+            question_id=new_question.question_id,
+            user_id=None,  # System-generated
+            username=ai_suggestion.get("suggested_by", "AI Assistant"),
+            message=f"🤖 **AI-Suggested Answer** (Confidence: {int(ai_suggestion['confidence'] * 100)}%)\n\n{ai_suggestion['answer']}"
+        )
+        db.add(ai_answer)
+        db.commit()
+        db.refresh(ai_answer)
+        
+        # Broadcast AI answer
+        await manager.broadcast({
+            "type": "new_answer",
+            "data": {
+                "question_id": new_question.question_id,
+                "answer_id": ai_answer.answer_id,
+                "username": ai_answer.username,
+                "message": ai_answer.message,
+                "timestamp": ai_answer.timestamp.isoformat()
+            }
+        })
+        
+        logger.info(f"AI suggested answer for question {new_question.question_id} (confidence: {ai_suggestion['confidence']})")
     
     return new_question
 

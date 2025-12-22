@@ -14,6 +14,7 @@ A full-stack real-time Q&A platform built with **FastAPI**, **Next.js**, and **W
 ✅ **JWT Authentication**: Secure admin authentication with token-based access  
 ✅ **Status Management**: Questions auto-sort with Escalated at the top  
 ✅ **Webhook Integration**: External service notification when questions are answered  
+✅ **AI Auto-Suggest**: RAG-style pattern matching for automatic answer suggestions (Bonus)  
 ✅ **Database**: SQLite (local) with easy PostgreSQL migration path  
 
 ---
@@ -26,6 +27,7 @@ A full-stack real-time Q&A platform built with **FastAPI**, **Next.js**, and **W
 |-------|-----------|---------|
 | **Backend API** | FastAPI 0.110.0 | REST API endpoints |
 | **Real-time** | WebSockets | Live updates to all clients |
+| **AI Assistant** | RAG/Pattern Matching | Auto-suggest answers (Bonus) |
 | **Frontend** | Next.js 14.2.6 + React 18 | Server-side rendered UI |
 | **Database** | SQLAlchemy + SQLite | Data persistence |
 | **Auth** | JWT (python-jose) | Admin authentication |
@@ -596,13 +598,36 @@ pip install psycopg2-binary
 - [x] **Webhooks** (external service ping when answered) ✅
 - [x] **Environment Variables** (.env files) ✅
 - [x] **Docker Compose** (containerized deployment) ✅
-- [ ] **RAG/Langchain** (optional - not implemented, can add mock)
+- [x] **RAG/AI Assistant** (mocked pattern-matching with auto-suggest answers) ✅
+
+---
+
+## 🤖 **AI Auto-Suggest Feature**
+
+The system includes an AI Assistant that automatically suggests answers to new questions using pattern matching (demonstrating RAG/Langchain concept):
+
+### How It Works
+1. **Pattern Recognition**: Analyzes question text against knowledge base
+2. **Confidence Scoring**: Calculates relevance (0.0 to 1.0)
+3. **Auto-Response**: If confidence > 75%, automatically posts AI-suggested answer
+4. **Real-Time**: AI answers broadcast instantly via WebSocket
+
+### Knowledge Domains
+- Password reset & account management
+- System requirements & technical specs
+- How-to guides & tutorials
+- Admin features & permissions
+- Real-time functionality
+- API & developer integration
+- Troubleshooting & error handling
+
+**Example**: Ask "How do I reset my password?" and the AI will instantly suggest a detailed answer with 85% confidence!
 
 ---
 
 ## 🛠️ **Future Enhancements**
 
-1. **AI Auto-Suggest Answers** (Langchain integration)
+1. **Advanced AI Integration** (OpenAI GPT/Langchain with vector embeddings)
 2. **Email Notifications** for admins
 3. **Question Categories/Tags**
 4. **Search Functionality**
