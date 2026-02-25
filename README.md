@@ -632,6 +632,24 @@ The system includes an AI Assistant that automatically suggests answers to new q
 
 ---
 
+## ⚠️ **Assumptions & Limitations**
+
+### Assumptions
+- **Single Admin Role**: Admin accounts require manual creation via the `/auth/register` endpoint; there is no self-serve admin promotion UI (by design, to prevent privilege escalation).
+- **SQLite for Development**: The default database is SQLite for ease of local setup. Production deployments should migrate to PostgreSQL using the documented migration path.
+- **WebSocket Authentication**: Anonymous users connect to the WebSocket for read-only live updates; only authenticated admins receive privileged admin_notification events.
+- **Webhook URL**: The external webhook is optional. If `WEBHOOK_URL` is not set in the environment, triggered notifications are silently skipped.
+- **AI Suggestions**: The AI auto-suggest feature uses keyword/pattern matching (not a real LLM). It is a demonstration of the RAG concept and should be replaced with a real embedding model for production use.
+
+### Limitations
+- **No Email Verification**: User registration does not send a verification email; accounts are active immediately after registration.
+- **In-Memory WebSocket State**: WebSocket connections are tracked in-memory. Restarting the server disconnects all clients; a Redis pub/sub layer would be needed for multi-instance deployments.
+- **JWT Expiry**: Access tokens expire after 60 minutes with no refresh-token mechanism; users must re-login after expiry.
+- **Search**: Full-text search across questions is not implemented in this version.
+- **File Uploads**: Attachments or image uploads in questions/answers are not supported.
+
+---
+
 ## 🛠️ **Future Enhancements**
 
 1. **Advanced AI Integration** (OpenAI GPT/Langchain with vector embeddings)
