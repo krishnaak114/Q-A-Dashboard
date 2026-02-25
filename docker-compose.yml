@@ -2,7 +2,7 @@ services:
   # Backend API + WebSocket Server
   backend:
     build: ./backend
-    container_name: hemut-backend
+    container_name: qa-dashboard-backend
     ports:
       - "8000:8000"
     environment:
@@ -15,14 +15,14 @@ services:
       - backend-db:/app/data
     command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
     networks:
-      - hemut-network
+      - qa-network
 
   # Frontend Next.js Application
   frontend:
     build: 
       context: ./frontend
       dockerfile: Dockerfile
-    container_name: hemut-frontend
+    container_name: qa-dashboard-frontend
     ports:
       - "3000:3000"
     environment:
@@ -36,11 +36,11 @@ services:
     depends_on:
       - backend
     networks:
-      - hemut-network
+      - qa-network
 
 volumes:
   backend-db:
 
 networks:
-  hemut-network:
+  qa-network:
     driver: bridge
