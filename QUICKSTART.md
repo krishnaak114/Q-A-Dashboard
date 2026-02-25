@@ -133,7 +133,7 @@ python
 ### Dashboard
 ```
 ┌─────────────────────────────────────────────────┐
-│  Hemut Q&A Dashboard                  [Logout]  │
+│  Real-Time Q&A Dashboard              [Logout]  │
 ├─────────────────────────────────────────────────┤
 │                                                 │
 │  Ask a Question                                 │
