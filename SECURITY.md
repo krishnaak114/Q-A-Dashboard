@@ -78,7 +78,7 @@ Send a detailed report to:
 
 ### Current Implementation (Development/Demo)
 
-This project was built as a trial assignment with the following considerations:
+This project was built as a development/demo application with the following considerations:
 
 1. **SQLite Database** - Use PostgreSQL for production
 2. **CORS Open** - Restrict to specific domains in production
@@ -155,4 +155,4 @@ JWT_EXPIRATION_MINUTES=60
 
 For security concerns, please use GitHub's private security reporting feature or contact the maintainer directly.
 
-**Note**: This is a trial project. For production deployment, implement all recommended security hardening measures.
+**Note**: For production deployment, implement all recommended security hardening measures.

@@ -1,11 +1,11 @@
-# Contributing to Hemut Q&A Dashboard
+# Contributing to Real-Time Q&A Dashboard
 
 Thank you for your interest in contributing to this project! 🎉
 
 ## 📋 Project Information
 
 **Repository**: [github.com/krishnaak114/Q-A-Dashboard](https://github.com/krishnaak114/Q-A-Dashboard)  
-**Purpose**: Trial assignment for Hemut - Real-Time Q&A Dashboard  
+**Purpose**: Full-stack assessment - Real-Time Q&A Dashboard  
 **Status**: Complete and functional
 
 ## 🔧 Development Setup

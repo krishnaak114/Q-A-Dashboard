@@ -35,7 +35,7 @@ export default function Dashboard() {
     <div className={styles.container}>
       <nav className={styles.navbar}>
         <div className={styles.navContent}>
-          <h1 className={styles.logo}>Hemut Q&A Dashboard</h1>
+          <h1 className={styles.logo}>Real-Time Q&A Dashboard</h1>
           <div className={styles.navRight}>
             {username ? (
               <>
@@ -76,7 +76,7 @@ export default function Dashboard() {
       </main>
 
       <footer className={styles.footer}>
-        <p>Hemut Trial Project: Real-Time Q&A Dashboard</p>
+        <p>Real-Time Q&A Dashboard | Full-Stack Assessment Project</p>
         <p className={styles.features}>
           Features: FastAPI Backend | Next.js Frontend | WebSocket Real-time | 
           JWT Auth | AJAX Validation

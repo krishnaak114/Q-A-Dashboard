@@ -2,7 +2,7 @@
 
 ## ✅ Assignment Complete!
 
-Your **Hemut Trial Project: Real-Time Q&A Dashboard** is 100% ready to run!
+Your **Real-Time Q&A Dashboard** is 100% ready to run!
 
 📦 **GitHub Repository**: [github.com/krishnaak114/Q-A-Dashboard](https://github.com/krishnaak114/Q-A-Dashboard)  
 🚀 **CI/CD Status**: ✅ All tests passing  
@@ -46,7 +46,7 @@ Your **Hemut Trial Project: Real-Time Q&A Dashboard** is 100% ready to run!
 ## 🗂️ Project Structure
 
 ```
-hemut-qa-dashboard/
+Q-A-Dashboard/
 ├── 📁 backend/               # FastAPI Backend
 │   ├── app/
 │   │   ├── main.py          # FastAPI application entry
@@ -107,7 +107,7 @@ hemut-qa-dashboard/
 
 ### Method 1: Docker (One Command)
 ```powershell
-cd hemut-qa-dashboard
+cd Q-A-Dashboard
 docker-compose up --build
 ```
 
@@ -363,9 +363,9 @@ docker-compose up -d
 
 ---
 
-## 🏆 Assignment Submission Checklist
+## 🏆 Submission Checklist
 
-Before submitting to Hemut:
+Before submitting:
 
 - [x] Push to public GitHub repository
 - [x] README.md with setup instructions
@@ -381,13 +381,13 @@ Before submitting to Hemut:
 ### Email Template
 
 ```
-Subject: Hemut Trial Project Submission - Real-Time Q&A Dashboard
+Subject: Full-Stack Assessment Submission - Real-Time Q&A Dashboard
 
-Dear Hemut Team,
+Dear Hiring Team,
 
-I've completed the trial project assignment. Here's my submission:
+I've completed the full-stack assessment. Here's my submission:
 
-GitHub Repository: https://github.com/yourusername/hemut-qa-dashboard
+GitHub Repository: https://github.com/krishnaak114/Q-A-Dashboard
 
 Project Features:
 ✅ FastAPI backend with REST API + WebSockets
@@ -447,6 +447,6 @@ Best regards,
 2. Push to GitHub (public repository)
 3. Update GitHub URL in README
 4. Add screenshots to README (optional)
-5. Submit via email to Hemut
+5. Submit the live URL and GitHub link
 
 **Good luck with your submission!** 💪

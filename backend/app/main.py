@@ -18,7 +18,7 @@ Base.metadata.create_all(bind=engine)
 
 # Initialize FastAPI app
 app = FastAPI(
-    title="Hemut Q&A Dashboard API",
+    title="Real-Time Q&A Dashboard API",
     description="Real-time Q&A platform with WebSocket support",
     version="1.0.0"
 )
@@ -42,7 +42,7 @@ app.include_router(questions.router)
 async def root():
     """Health check endpoint"""
     return {
-        "message": "Hemut Q&A Dashboard API",
+        "message": "Real-Time Q&A Dashboard API",
         "status": "running",
         "version": "1.0.0"
     }

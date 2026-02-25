@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to the Hemut Q&A Dashboard project will be documented in this file.
+All notable changes to the Real-Time Q&A Dashboard project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 🎉 Initial Release - Project Complete
 
-This marks the completion of the Hemut Trial Project assignment with all requirements met plus bonus features.
+This marks the completion of the full-stack assessment with all requirements met plus bonus features.
 
 #### ✨ Added - Core Features
 
@@ -199,6 +199,6 @@ This marks the completion of the Hemut Trial Project assignment with all require
 
 ---
 
-**Note**: This project was completed as a trial assignment for Hemut. All core requirements and bonus features have been successfully implemented and tested.
+**Note**: This project was completed as a full-stack assessment. All core requirements and bonus features have been successfully implemented and tested.
 
 [1.0.0]: https://github.com/krishnaak114/Q-A-Dashboard/releases/tag/v1.0.0

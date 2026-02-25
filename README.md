@@ -1,4 +1,4 @@
-# 🎯 Hemut Trial Project: Real-Time Q&A Dashboard
+# 🎯 Real-Time Q&A Dashboard
 
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Q--A--Dashboard-blue?logo=github)](https://github.com/krishnaak114/Q-A-Dashboard)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.127.0-009688?logo=fastapi)](https://fastapi.tiangolo.com/)
@@ -138,7 +138,7 @@ answers
 
 ```bash
 # Clone the repository
-cd hemut-qa-dashboard
+cd Q-A-Dashboard
 
 # Start all services
 docker-compose up --build
@@ -395,7 +395,7 @@ async def trigger_webhook(question: Question):
 ## 📁 **Project Structure**
 
 ```
-hemut-qa-dashboard/
+Q-A-Dashboard/
 ├── backend/
 │   ├── app/
 │   │   ├── __init__.py
@@ -678,7 +678,7 @@ For questions or issues, please open a GitHub issue or contact the development t
 
 ## 📄 **License**
 
-This project was built as a trial assignment for Hemut. Feel free to use as reference or extend for your own projects.
+This project was built as a full-stack assessment. Feel free to use as reference or extend for your own projects.
 
 MIT License - See repository for details.
 

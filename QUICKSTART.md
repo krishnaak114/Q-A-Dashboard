@@ -6,14 +6,14 @@
 
 ```powershell
 # Clone from GitHub
-git clone https://github.com/krishnaak114/Q-A-Dashboard.git hemut-qa-dashboard
-cd hemut-qa-dashboard
+git clone https://github.com/krishnaak114/Q-A-Dashboard.git
+cd Q-A-Dashboard
 ```
 
 **SSH Clone**:
 ```powershell
-git clone git@github.com:krishnaak114/Q-A-Dashboard.git hemut-qa-dashboard
-cd hemut-qa-dashboard
+git clone git@github.com:krishnaak114/Q-A-Dashboard.git
+cd Q-A-Dashboard
 ```
 
 ---
